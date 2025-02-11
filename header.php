@@ -18,8 +18,18 @@
   <div id="container">
 
     <header>
-      <h1 id="logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_theme_file_uri('images/logo.png'); ?>" alt="SAMPLE SITE"></a></h1>
-      <aside id="mainimg"><img src="<?php echo get_theme_file_uri('images/mainimg.jpg'); ?>" alt=""></aside>
+      <h1 id="logo">
+        <a href="<?php echo home_url(); ?>">
+          <img src="<?php echo get_theme_file_uri('images/logo.png'); ?>" alt="SAMPLE SITE">
+        </a>
+      </h1>
+
+      <?php if ( is_home() || is_front_page() ) : ?>
+        <!-- 条件を満たしている場合 -->
+        <aside id="mainimg">
+          <img src="<?php echo get_theme_file_uri('images/mainimg.jpg'); ?>" alt="">
+        </aside>
+      <?php endif; ?>
     </header>
 
     <nav id="menubar">
