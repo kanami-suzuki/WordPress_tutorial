@@ -35,9 +35,9 @@
     <nav id="menubar">
       <ul>
         <li><a href="<?php echo home_url(); ?>">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="link.html">Link</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/gallery/">Gallery</a></li>
+        <li><a href="/link/">Link</a></li>
       </ul>
     </nav>
 
